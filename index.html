@@ -13,7 +13,7 @@
     <main>
         <section class="container mb-5">
             <h1 class="text-center mt-3 mb-4 fw-bolder text-info">Income Summary</h1>
-            <div class="row align-items-start">
+            <div class="row g-3">
                 <div class="col-md-6">
                     <img height="615" width="490" class="img-fluid rounded" src="./pictures/img.png" alt="">
                 </div>
@@ -21,33 +21,33 @@
                     <div class="text-center mb-2 ">
                         <h3 class="fs-2 fw-bold">Income</h3>
                         <label>Income:
-                            <input type="text">
+                            <input id="income-input" type="text">
                         </label>
                         <h3 class="fs-2 fw-bold mt-3">Expenses</h3>
                         <label class="mb-3 ">Food: 
-                            <input type="text">
+                            <input id="food-input" type="text">
                         </label>
                         <br>
                         <label class="mb-3">Rent:
-                            <input type="text">
+                            <input id="rent-input" type="text">
                         </label>
                         <br>
                         <label class="mb-3">Bills:
-                            <input type="text">
+                            <input id="bills-input" type="text">
                         </label>
                         <br>
-                        <button type="button" class="btn btn-danger px-5">Calculate</button>
+                        <button id="calculate-btn" type="button" class="btn btn-danger px-5">Calculate</button>
                     </div>
-                    <h3 class="text-center">Total Expenses : 00</h3>
-                    <h2 class="text-center">Balance : 00</h2>
+                    <h3 class="text-center">Total Expenses : <span id="expenses-tag">00</span></h3>
+                    <h2 class="text-center">Balance : <span id="balance-tag">00</span></h2>
                     <div class="text-center mb-2 ">
                         <label>Save:
-                            <input class="p-1" type="text">
+                            <input id="save-input" class="p-1" type="text">
                         </label>
                         <span>%</span>
-                        <button type="button" class="btn btn-danger px-5">Save</button>
-                        <h3 class="text-center">Saving Amount : 00</h3>
-                    <h3 class="text-center">Remaining Balance : 00</h3>
+                        <button id="save-btn" type="button" class="btn btn-danger px-5">Save</button>
+                        <h3 class="text-center">Saving Amount : <span id="saving-amount">00</span></h3>
+                    <h3 class="text-center">Remaining Balance : <span id="remain-tag">00</span></h3>
                     </div>
                 </div>
             </div>
