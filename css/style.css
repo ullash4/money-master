@@ -1,3 +1,10 @@
-.notify {
+/* Additional CSS  */
+.bg-ullash-primary{
+    background-color: rgba(34, 203, 92, 0.63);
+}
+.btn-ullash-danger{
+    background-color: #E8BD0D;
+}
+.error-sms {
     display: none;
 }
