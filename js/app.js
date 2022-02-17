@@ -28,7 +28,13 @@ document.getElementById('calculate-btn').addEventListener('click', function (){
 function incomeCalculation(){
     let income = document.getElementById('income-input').value;
     let incomeTk = parseFloat(income);
-    return incomeTk;
+    if(incomeTk < 0){
+        document.getElementById('fail-income-sms').style.display ='block';
+    }
+    else{
+        document.getElementById('fail-income-sms').style.display ='none';
+        return incomeTk;
+    }
 }
 
 // Make save button functional 
