@@ -34,9 +34,9 @@ function incomeCalculation(){
 // Make save button functional 
 document.getElementById('save-btn').addEventListener('click', function (){
     const saving = document.getElementById('save-input').value;
-    const savingTk = parseFloat(saving);
+    const savingTk = parseFloat(saving) / 100;
     let mySaving= 0;
-    mySaving= incomeCalculation() / savingTk;
+    mySaving= incomeCalculation() * savingTk;
     const savingAmount = document.getElementById('saving-amount');
     savingAmount.innerText = mySaving;
 
