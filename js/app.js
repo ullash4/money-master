@@ -48,8 +48,6 @@ document.getElementById('save-btn').addEventListener('click', function (){
 
     const mainBalance = document.getElementById('balance-tag');
     const balanceInTk = parseFloat(mainBalance.innerText);
-    /* let remain = 0;
-    remain = balanceInTk - mySaving */;
     // Error handling 
     if(mySaving > balanceInTk || mySaving < 0 || mySaving == ''){
         document.getElementById('fail-save-sms').style.display ='block';
