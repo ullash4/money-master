@@ -14,11 +14,11 @@ document.getElementById('calculate-btn').addEventListener('click', function (){
         let totalCost = 0;
         totalCost = foodTk + rentTk + billsTk;
         const expenses = incomeCalculation() - totalCost;
-
-        totalExpenses.innerText = totalCost;
+        
         const totalExpenses = document.getElementById('expenses-tag');
-        mainBalance.innerText = expenses;
+        totalExpenses.innerText = totalCost;
         const mainBalance = document.getElementById('balance-tag');
+        mainBalance.innerText = expenses;
         
         document.getElementById('fail-sms').style.display ='none';
     }
