@@ -42,13 +42,15 @@ document.getElementById('save-btn').addEventListener('click', function (){
 
     const mainBalance = document.getElementById('balance-tag');
     const balanceInTk = parseFloat(mainBalance.innerText);
-    let remain = 0;
-    remain = balanceInTk - mySaving;
+    /* let remain = 0;
+    remain = balanceInTk - mySaving */;
     // Error handling 
-    if(mySaving > remain || mySaving < 0){
+    if(mySaving > balanceInTk || mySaving < 0 || mySaving == ''){
         document.getElementById('fail-save-sms').style.display ='block';
     }
     else{
+        let remain = 0;
+        remain = balanceInTk - mySaving
         const remaining = document.getElementById('remain-tag');
         remaining.innerText = remain;
         document.getElementById('fail-save-sms').style.display ='none';
